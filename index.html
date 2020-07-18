@@ -8,7 +8,6 @@
   <meta name="author" content="Олег Беляев">
   <title>Путешествия по России</title>
   <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="./vendor/fonts/inter.css">
 </head>
 <body>
   <div class="page">
@@ -24,8 +23,10 @@
         <h1 class="lead__title"> Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.
         </p>
-        <img class="lead__image" src="./images/lead-polka.jpg" alt="Фото нижней боковой полки">
-        <p class="lead__caption">ваша полка — верхняя</p>
+        <figure class="lead__figure">
+          <img class="lead__image" src="./images/lead-polka.jpg" alt="Фото нижней боковой полки">
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+        </figure>
       </section>
       <section class="intro content__intro">
         <h2 class="intro__title">Чего мы там не видели?</h2>
@@ -40,26 +41,26 @@
           описали некоторые интересные места, достойные вашего отпуска.
         </p>
         <ul class="intro__list">
-          <li class="intro__item">Часовых поясов 11</li>
-          <li class="intro__item">Объектов природного наследия ЮНЕСКО 12</li>
-          <li class="intro__item">Объектов культурного наследия ЮНЕСКО 16</li>
-          <li class="intro__item">Природных заповедников 105</li>
-          <li class="intro__item">Аэропортов 241</li>
+          <li class="intro__item"><span class="intro__span-accent">Часовых поясов</span> 11</li>
+          <li class="intro__item"><span class="intro__span-accent">Объектов природного наследия ЮНЕСКО</span> 12</li>
+          <li class="intro__item"><span class="intro__span-accent">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+          <li class="intro__item"><span class="intro__span-accent">Природных заповедников</span> 105</li>
+          <li class="intro__item"><span class="intro__span-accent">Аэропортов</span> 241</li>
         </ul>
       </section>
       <section class="photo-grid content__photo-grid">
-        <img class="photo-grid__item" src="./images/photo-grid-train.jpg" alt="Вид из окна вагона"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.jpg" alt="Гора Атхарва тулси"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-tuman.jpg" alt="Утренний туман"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-sochi.jpg" alt="Сочи"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-arisa.jpg" alt="Машина на льду"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-baikal.jpg" alt="Озеро Байкал"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-elbrus.jpg" alt="Гора Эльбрус"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-kondratiev.jpg" alt="Знак и бетонные блоки"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка. Фото №1"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка. Фото №2"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-baikal-2.jpg" alt="Озеро Байкал. Фото №2"></img>
-        <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Природный парк Ергаки"></img>
+        <img class="photo-grid__item" src="./images/photo-grid-train.jpg" alt="Вид из окна вагона">
+        <img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.jpg" alt="Гора Атхарва тулси">
+        <img class="photo-grid__item" src="./images/photo-grid-tuman.jpg" alt="Утренний туман">
+        <img class="photo-grid__item" src="./images/photo-grid-sochi.jpg" alt="Сочи">
+        <img class="photo-grid__item" src="./images/photo-grid-arisa.jpg" alt="Машина на льду">
+        <img class="photo-grid__item" src="./images/photo-grid-baikal.jpg" alt="Озеро Байкал">
+        <img class="photo-grid__item" src="./images/photo-grid-elbrus.jpg" alt="Гора Эльбрус">
+        <img class="photo-grid__item" src="./images/photo-grid-kondratiev.jpg" alt="Знак и бетонные блоки">
+        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка. Фото №1">
+        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка. Фото №2">
+        <img class="photo-grid__item" src="./images/photo-grid-baikal-2.jpg" alt="Озеро Байкал. Фото №2">
+        <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Природный парк Ергаки">
       </section>
       <section class="places content__places">
         <div class="place places__place">
@@ -194,29 +195,28 @@
           </p>
         </div>
       </section>
-      <section class="cover">
-        <img src="./images/cover-trains.jpg" alt="ЖД Станция" class="cover__background">
-          <div class="cover__text">
-            <h2 class="cover__title">До Байкала «на собаках»</h2>
-            <p class="cover__subtitle">
+      <section class="cover content__cover">
+        <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link">
+          <h2 class="cover__title">До Байкала «на собаках»</h2>
+          <p class="cover__subtitle">
             По мотивам учебной темы о Транссибе
             и iframes — путешествие от столицы до
             Байкала на электричках.
-            </p>
-          </div>
-        <a href="https://stampsy.com/na-elektrichkakh-do-baikala">
-          <div class="cover__overlay"></div>
+          </p>
         </a>
+        <div class="cover__background"></div>
       </section>
     </main>
     <footer class="footer page__footer">
-      <ul class="footer__links">
-        <li class="footer__item"><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
-        <li class="footer__item"><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
-        <li class="footer__item"><a class="footer__link" href="https://rasp.yandex.ru">Расписание</a></li>
-        <li class="footer__item"><a class="footer__link" href="https://calendar.yandex.ru">Календарь</a></li>
-        <li class="footer__item"><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
-      </ul>
+      <nav>
+        <ul class="footer__links">
+          <li class="footer__item"><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://rasp.yandex.ru">Расписание</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://calendar.yandex.ru">Календарь</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
+        </ul>
+      </nav>
       <p class="footer__copyright">&copy; 2020. Олег Беляев</p>
     </footer>
   </div>
